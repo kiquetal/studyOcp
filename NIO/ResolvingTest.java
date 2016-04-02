@@ -1,13 +1,13 @@
 import java.nio.file.Paths;
 import java.nio.file.Path;
 import java.io.IOException;
+//ITEM1:
 public class ResolvingTest
 {
   //Resolve se utiliza para UNIR algunos Paths
   //Resolve no lanza excepciones
   // Path no implementa AutoCloseable :(
   //Let's probe some variants about resolve and resolveSibling, 
-  // Is about ITEM 1 
   public static void main(String args[])
  {
   

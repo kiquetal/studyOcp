@@ -1,8 +1,10 @@
 import java.nio.file.Paths;
 import java.io.IOException;
 import java.nio.file.Path;
+//ITEM:
 public class Relativize
 {
+
 //Vamos a probar el metodo relativize que es para crear el camino de un path a otro
 //Probaremos los metodos toAbsolutePath, toRealPath(this is tricky) toUri()
 public static void main(String args[] )
@@ -18,6 +20,7 @@ Path p1,p2,p=null;
  
 try
 {
+  //ILEGAL ARGUMENT EXCEPTION
  //Tampoco se puede ir de 2 absolute paths completamente diferentes.
  p1=Paths.get("home/kiquetal");
  p2=Paths.get("/algo");
