@@ -1,12 +1,14 @@
 # Lo que dice el gran Libro y sus fechorías.
 ===
 + **Item 1**: Use the Path class to operate on file and directory paths.
+
 ..* What Is a Path? (And Other File System Facts)
 
 
 ..* Path Operations
 
 + **Item 2**: Use the Files class to check, delete, copy, or move a file or directory.
+
 ..* File Operations
 
 
@@ -22,6 +24,7 @@
 ..* Moving a File or Directory
 
 + **Item 3**: Read and change file and directory attributes.
+
 ..* Managing Metadata (File and File Store Attributes)
 
 * **Item 4**: Recursively access a directory tree.
