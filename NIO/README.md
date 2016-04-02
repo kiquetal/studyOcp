@@ -7,9 +7,11 @@
 
   * Path Operations
 
-   toRealPath throws IOException
-   toAbsolutePath doesn't remove redundancies
-   toUri self-explanatory
+     * toRealPath throws IOException
+     
+     * toAbsolutePath doesn't remove redundancies
+     
+     * toUri self-explanatory
 
 + **Item 2**: Use the Files class to check, delete, copy, or move a file or directory.
 
