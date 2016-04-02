@@ -3,8 +3,13 @@
 + **Item 1**: Use the Path class to operate on file and directory paths.
 
   * What Is a Path? (And Other File System Facts)
+    * FileSystems.getDefault()
 
   * Path Operations
+
+   toRealPath throws IOException
+   toAbsolutePath doesn't remove redundancies
+   toUri self-explanatory
 
 + **Item 2**: Use the Files class to check, delete, copy, or move a file or directory.
 

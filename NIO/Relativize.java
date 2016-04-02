@@ -1,4 +1,5 @@
 import java.nio.file.Paths;
+import java.io.IOException;
 import java.nio.file.Path;
 public class Relativize
 {
@@ -28,11 +29,32 @@ catch(Exception e)
  System.out.println("no se puede ir de un absolute path a un relative path");
 }
 
+ p1=Paths.get("folder/uno/../dos");
+ System.out.println(p1.toAbsolutePath());
+ //Remove redundance 
+ System.out.println(p1.normalize());
 
+ //toRealPath checkExceptions!
 
+ try
+ {
+   System.out.println(p1.toRealPath());
 
-
-
+  }
+ catch(IOException e)
+ {
+  System.out.println("no existe file");
+ }
+try
+{
+ p1=Paths.get("test/bla/bla2/../");
+ System.out.println(p1.toRealPath()); 
+ assert p1.toString() != null : "No deberia de explotar";
+}
+catch(IOException e)
+{
+ assert false;
+}
 }
 
 }
