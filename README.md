@@ -3,5 +3,5 @@
 
 
 ## Tabla del dolor
-ALT-H1
+===
 *NIO 
