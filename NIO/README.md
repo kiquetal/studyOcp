@@ -63,7 +63,7 @@
   
   * ProtocolException
  
-  *  EOFExceptio
+  *  EOFException
  
   *  SocketException
 
