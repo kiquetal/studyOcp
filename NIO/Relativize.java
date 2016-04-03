@@ -51,7 +51,7 @@ catch(Exception e)
 try
 {
  p1=Paths.get("test/bla/bla2/../");
- System.out.println(p1.toRealPath()); 
+ System.out.println("Sin redunancias"+ p1.toRealPath() + "\nbefore\t"+p1.toString()); 
  assert p1.toString() != null : "No deberia de explotar";
 }
 catch(IOException e)

@@ -13,4 +13,4 @@
 ## Tabla del dolor
 ===
 * NIO
-  * Esto se reduce a Paths,Files, el truco esta en aprender, haciendo lanzar excepciones. 
+  * Esto se reduce a Paths,Files, el truco está en aprender, haciendo lanzar excepciones. 

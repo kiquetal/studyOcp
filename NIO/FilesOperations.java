@@ -6,15 +6,21 @@ public class FilesOperations
 //Create Directory  THROWS IOException, Root Folder must exists
 //Create Directories CREATE ALL EVEN IF THE ROOT FOLDER SPECIFIED IN THE ARGUMENT DOESN T EXISTS
 //Create File  MUST EXISTS CONTAINER FOLDER
-//Move File  
-//Copy Files 
+//COPY  
+//BY DEFAULT MOVE FILE DOESN'T REPLACE FILE
+//
+//ATOMIC_MOVE
+//COPY_ATTRIBUTES
+//REPLACE_EXISTING
+
+//MOVE Files 
 
 
  public static void main(String args[])
 
 {
  
- Path p1=null;
+ Path p1,p2=null;
  try
  {
  p1=Paths.get("test2/bla/bla2");
@@ -49,8 +55,43 @@ public class FilesOperations
  {
   assert false:"No deberia llegar aqui por createDirectories";
  }
+
+ Path source=Paths.get("test/toCopy.txt");
+ Path destination=Paths.get("test/toCopy2.txt");
+try
+{
+ System.out.println(Files.copy(source,destination));
+}
+catch(IOException ex)
+{
+ //assert false:"Hubo excepcion no se puede copiar 2 veces"+ex.toString();
+} 
+
+try
+{
+
+ p1=Paths.get("test/toCopy.txt");
+ p2=Paths.get("test/moveToCopy.txt");
+
+ Files.move(p1,p2);
+}
+catch(IOException e)
+{
+ System.out.println("No existe el file\n"+e);
+}
+
+try
+{
+p1=Paths.get("test/moveToCopy.txt");
+p2=Paths.get("test/toCopy2.txt");
+Files.move(p1,p2);
+
+}
+catch(IOException e)
+{
+ System.out.println("OK, DEBE FALLAR SI YA EXISTE OTRO ARCHIVO"+e.toString());
 }
 
 
-
+}
 }

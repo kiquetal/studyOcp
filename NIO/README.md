@@ -3,8 +3,7 @@
 + **Item 1**: Use the Path class to operate on file and directory paths.
 
   * What Is a Path? (And Other File System Facts)
-    * FileSystems.getDefault()
-
+    * FileSystems.getDefault().getPath = > Paths.get
   * Path Operations
 
      * toRealPath throws IOException
@@ -23,6 +22,8 @@
   * Deleting a File or Directory
 
   * Copying a File or Directory
+    
+    Throws IOException
 
   * Moving a File or Directory
 
