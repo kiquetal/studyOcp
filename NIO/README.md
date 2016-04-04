@@ -26,6 +26,8 @@
     Throws IOException
 
   * Moving a File or Directory
+    
+    Throws IOException
 
 + **Item 3**: Read and change file and directory attributes.
 
@@ -68,3 +70,7 @@
  
   *  SocketException
 
+## RuntimeExceptions
+
++ IllegalArgumentException
++ SecurityException

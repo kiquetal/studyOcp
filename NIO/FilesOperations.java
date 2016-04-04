@@ -58,14 +58,15 @@ public class FilesOperations
 
  Path source=Paths.get("test/toCopy.txt");
  Path destination=Paths.get("test/toCopy2.txt");
-try
-{
- System.out.println(Files.copy(source,destination));
-}
-catch(IOException ex)
-{
+//try
+//{
+// System.out.println(Files.copy(source,destination));
+//}
+//catch(IOException ex)
+//{
+// System.out.println("FALLO AL existir file" + ex.toString());
  //assert false:"Hubo excepcion no se puede copiar 2 veces"+ex.toString();
-} 
+//} 
 
 try
 {
@@ -84,7 +85,7 @@ try
 {
 p1=Paths.get("test/moveToCopy.txt");
 p2=Paths.get("test/toCopy2.txt");
-Files.move(p1,p2);
+Files.move(p1,p2,StandardCopyOption.ATOMIC_MOVE);
 
 }
 catch(IOException e)
