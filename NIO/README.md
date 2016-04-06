@@ -32,7 +32,16 @@
 + **Item 3**: Read and change file and directory attributes.
 
   * Managing Metadata (File and File Store Attributes)
+    
+    
+    * BasicFileAttributes bs=Files.readAttributes(Path,BasicFileAttributes.class);
+    * BasicFileAttributeView= Files.getFileAttributeView(Path,BasicFileAttributeView.class)
+    
 
+    * Lectura de Attribute
+      Files.getAttribute(Path,"size");
+      Map<String,Objec>f= Files.readAttributes(Path,"*")   
+ 
 * **Item 4**: Recursively access a directory tree.
 
   * Walking the File Tree

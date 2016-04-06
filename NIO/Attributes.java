@@ -26,7 +26,7 @@ group()					isArchive
 					isSystem
 
 
-Arguments to be Query
+Arguments to be Query in Files.readAttributes
 acl
 dos
 posix
@@ -48,6 +48,7 @@ static void lecturaPorClass(Path p)
  try
  {
  PosixFileAttributes p1=Files.readAttributes(p,PosixFileAttributes.class);
+ System.out.println(Files.getAttribute(p,"size"));
  System.out.println(p1.owner());
  }
  catch(IOException e)
@@ -73,7 +74,7 @@ catch(IOException ex)
 
 try
 {
- Files.getAttribute(p,"isOther");
+ Files.getAttribute(p,"basic:isOther");
 
 }
 catch(IOException ex)
