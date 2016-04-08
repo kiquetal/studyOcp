@@ -45,7 +45,22 @@
 * **Item 4**: Recursively access a directory tree.
 
   * Walking the File Tree
+    
+    * The FileVisitor methods return a FileVisitResult value. You can abort the file walking process or control whether a directory is visited by the values you return in the FileVisitor methods:
 
+     CONTINUE – Indicates that the file walking should continue. If the preVisitDirectory method returns CONTINUE, the directory is visited.
+
+
+     TERMINATE – Immediately aborts the file walking. No further file walking methods are invoked after this value is returned.
+
+
+     SKIP_SUBTREE – When preVisitDirectory returns this value, the specified directory and its subdirectories are skipped. This branch is "pruned out" of the tree.
+
+
+     SKIP_SIBLINGS – When preVisitDirectory returns this value, the specified directory is not visited, postVisitDirectory is not invoked, and no further unvisited siblings are visited. If returned from the postVisitDirectory method, no further siblings are visited. Essentially, nothing further happens in the specified directory.
+
+
+   
 +  **Item 5**: Find a file by using the PathMatcher class.
 
   * Finding Files
