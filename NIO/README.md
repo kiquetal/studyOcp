@@ -59,7 +59,7 @@
 
      SKIP_SIBLINGS – When preVisitDirectory returns this value, the specified directory is not visited, postVisitDirectory is not invoked, and no further unvisited siblings are visited. If returned from the postVisitDirectory method, no further siblings are visited. Essentially, nothing further happens in the specified directory.
 
-
+     Files.walkFileTree(Path,FileVisitor) Throws IOException
    
 +  **Item 5**: Find a file by using the PathMatcher class.
 
