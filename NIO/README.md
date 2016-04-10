@@ -26,6 +26,7 @@
     Throws IOException
 
   * Moving a File or Directory
+
     Move will fail if the targetDirectory is NOT empty even if the flas StandardOption.REPLACE_EXISTING was definied 
     Throws IOException
 
@@ -64,8 +65,12 @@
      Methods
      
      postVisitResult(T dir, IOException)
+
+
      preVisitResult(T dir, BasicFileAttributes)
+
      visitFile(T dir, BasicFileAttributes)
+
      visitFileFiled(T file, IOException)
 
 +  **Item 5**: Find a file by using the PathMatcher class.
