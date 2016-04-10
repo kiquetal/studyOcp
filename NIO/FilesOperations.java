@@ -19,7 +19,18 @@ public class FilesOperations
  public static void main(String args[])
 
 {
- 
+
+
+ Path s=Paths.get("test/blam");
+ Path t=Paths.get("test/kiquetal/nuevo");
+try
+{ 
+Files.move(s,t,StandardCopyOption.REPLACE_EXISTING);
+ }
+catch(IOException e)
+{
+ System.out.println(e);
+}
  Path p1,p2=null;
  try
  {

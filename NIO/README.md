@@ -26,7 +26,7 @@
     Throws IOException
 
   * Moving a File or Directory
-    
+    Move will fail if the targetDirectory is NOT empty even if the flas StandardOption.REPLACE_EXISTING was definied 
     Throws IOException
 
 + **Item 3**: Read and change file and directory attributes.
@@ -60,7 +60,14 @@
      SKIP_SIBLINGS – When preVisitDirectory returns this value, the specified directory is not visited, postVisitDirectory is not invoked, and no further unvisited siblings are visited. If returned from the postVisitDirectory method, no further siblings are visited. Essentially, nothing further happens in the specified directory.
 
      Files.walkFileTree(Path,FileVisitor) Throws IOException
-   
+	   
+     Methods
+     
+     postVisitResult(T dir, IOException)
+     preVisitResult(T dir, BasicFileAttributes)
+     visitFile(T dir, BasicFileAttributes)
+     visitFileFiled(T file, IOException)
+
 +  **Item 5**: Find a file by using the PathMatcher class.
 
   * Finding Files
