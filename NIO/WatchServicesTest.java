@@ -22,7 +22,8 @@ public class WatchServicesTest
         for(WatchEvent<?> event:key.pollEvents())
         {
          WatchEvent.Kind<?>kind=event.kind();
-         Path p=((WatchEvent<Path>)event).context();
+      @SuppressWarnings("unchecked")    
+     Path p=((WatchEvent<Path>)event).context();
          
         if (kind== ENTRY_CREATE)
            System.out.println("he creado");
