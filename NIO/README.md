@@ -76,13 +76,28 @@
 +  **Item 5**: Find a file by using the PathMatcher class.
 
   * Finding Files
-
+    boolean matches(Path p)
+    FileSystems.getPathMatcher()
+    "syntax:pattern"
+    
   * What is a Glob?
 
 +  **Item 6**: Watch a directory for changes by using WatchService.
 
   * Watching a Directory for Changes
 
+  StandardWatchEventKinds.ENTRY_CREATE
+  WHEN A FILE/DIRECTORY created,moved,renamed
+
+  StandardWatchEventKinds.ENTRY_DELETE
+  WHEN A FILE/DIRECTORY deleted,moved or renamde
+
+  StandardWatchEventKinds.ENTRY_MODIFY
+  Platform dependent.
+
+  StandardWatchEventKinds.OVERFLOW
+
+  WatchServices watcher=FileSystems.getDefaul().newWatchServices();
 ## Checked Exceptions
 
 + IOException
