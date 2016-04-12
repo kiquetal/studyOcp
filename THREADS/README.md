@@ -9,17 +9,18 @@
 
  public String toString()
 
- public final void notifyAll()   =
-                                >>>>   IllegalMonitorException 	if the current thread is not the owner of this object monitor.
+ public final void notifyAll()  
+                                   >   IllegalMonitorException 	if the current thread is not the owner of this object monitor.
 
-                                >>>     A thread becomes the owner when:
+                                   >  A thread becomes the owner when:
        
-                                        *  Executing a synchronized instance method of that object.
+                                   >       Executing a synchronized instance method of that object.
 
-                                        *  By executing the body of a synchronized statement that synchronize on object.
+                                   >       By executing the body of a synchronized statement that synchronize on object.
 
-					*  For objects of type Class, by executing a synchronized static method of the class. 
- public final void notify()      =
+				   >	  For objects of type Class, by executing a synchronized static method of the class. 
+
+ public final void notify()
 
 + **Item 1**:
    
