@@ -57,3 +57,8 @@
   * Memory Consistency Errors
   
   * Deadlock
+
+## CheckedExceptions
+
++  java.lang.InterruptedException
+  
