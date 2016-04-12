@@ -1,5 +1,23 @@
 #The go' ol blocking stuff
 ===
+
+Methods Object
+
+public final wait() throws IE
+public final finalize() throws IE
+public String toString()
+public final void notifyAll()   =
+                                >>>>   IllegalMonitorException 	if the current thread is not the owner of this object monitor.
+
+                                >>>     A thread becomes the owner when:
+       
+                                        *  Executing a synchronized instance method of that object.
+
+                                        *  By executing the body of a synchronized statement that synchronize on object.
+
+					*  For objects of type Class, by executing a synchronized static method of the class. 
+public final void notify()      =
+
 + **Item 1**:
    
   * Create and use the Thread class and the Runtime interface.
