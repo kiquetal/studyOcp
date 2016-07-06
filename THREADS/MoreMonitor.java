@@ -31,13 +31,15 @@ public void run()
 
 
 }
-public static void main(String args[])
+public static void main(String args[]) throws InterruptedException
 {
  RealObject o=new RealObject();
  new MoreMonitor(o).start();
  new MoreMonitor(o).start();
  new MoreMonitor(o).start();
- new Thread(o).start();
+ Thread  t=new Thread(o);
+  t.start();
+  t.join();
 
 }
 
