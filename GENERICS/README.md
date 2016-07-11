@@ -1,9 +1,10 @@
 # Comparando warnings
 
-List<String> s=new ArrayList()  <= warning in this line
+List\<String\> s=new ArrayList()  <= warning in this line
 
-List s=new ArrayList<String>();
-  s.add(5) <= warning in this line
+List s=new ArrayList\<String\>();
+
+ s.add(5) <= warning in this line
 
 
 
