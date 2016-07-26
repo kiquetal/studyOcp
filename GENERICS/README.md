@@ -25,3 +25,21 @@ List s=new ArrayList\<String\>();
   Generic class cannot Extends Throwable
 
   Be aware of the overloaded methods with the same signature after erasure
+
+  (list instanceof ArrayList<Integer>)  //ERROR
+  (list instanceof ArrayList<?>)   ok!
+
+  	Object[] strings = new String[2];  //OJO VER EL OBJECT, aplicable este comportamiento a los Class y Sub-class
+	strings[0] = "hi";   // OK
+	strings[1] = 100;    // An ArrayStoreException is thrown.
+
+ 
+ public void parse(File file) throws T OK!!
+
+# Why Generics
+ 
+ Removing explicit casts
+ Better code readibility
+ Developing generic algorithms
+
+

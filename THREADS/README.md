@@ -64,7 +64,7 @@ form of virtual parallelism.”
  
    * Interrupts
 
-   * Joins
+   * Joins throws IE,like sleep
 
 + **Item 3**:
   

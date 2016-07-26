@@ -11,9 +11,13 @@ public class NoCompile
 
 {
 
+ List ls=Arrays.asList(new String[]{"kique","tal"});
+//  ls.add(4);
+
 //List l=new ArrayList(); //warning here.
-List  l=new ArrayList<Integer>(); 
-//List<Integer> l2 = l; warning here
+List  l=new ArrayList(); 
+//List<Integer> l2 = new ArrayList();// warning here
+//List l2=l;
 
 //l.add("5"); //warning here!!!
 
