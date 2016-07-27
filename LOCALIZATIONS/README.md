@@ -19,3 +19,12 @@ culturally sensitive information
 
 There is no exception when creating invalid Locales!!!
 
+
+
+java.util.ResourceBundle
+ is an abstract class is implemented by 
+
+ListResourceBundle and PropertyResourceBundle
+
+
+ResourceBundle.getBundle("resource-bundle","Locale");
