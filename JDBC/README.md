@@ -12,6 +12,24 @@ A resulset with a JavaBean View
  
 Could be connected or disconnected
 
+ CachedRowSet
+ JdbcRowSet
+ WebRowSet
+ FilteredRowSet
+
+from javax.sql.RowSet
+
+we need factory gtom javax.sql.rowset.RowSetProvider
+Factory f=RowSetProvider.newFactory();
+
+javax.sql.rowset.Factory
+
+createCachedRowSet
+createJdbcRowSet
+createWebRowSet
+createFilteredRowSet
+
+
 ## Connected
  
 
