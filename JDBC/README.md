@@ -3,7 +3,7 @@
  Connection
  ResultSet
  PreparedStatement
- 
+ RowSet (javax.sql.rowset) 
 
 # RowSet
 A resulset with a JavaBean View
@@ -61,16 +61,17 @@ Are pre-compiled faster that Statement
 
 Method withoutString for methods:
 
--execute()
+-execute():boolean
 -executeQuery()
 -executeUpdate()
 
+getUpdateCount()
 For DDL operation could use executeUpdate()
 
 
 # Statement
 
--executeQuery(String)
+-executeQuery(String) will raise exception if the sentence won't return RS
 -executeUpdate(String)
 -execute(String)
 # Constants
