@@ -39,7 +39,7 @@ catch(IOException e)
  }
  catch(IOException ex)
  {
-  System.out.println("No existe folder test2");
+  System.out.println("No existe folder test2:error"+ex.getMessage());
 
  }
  try
