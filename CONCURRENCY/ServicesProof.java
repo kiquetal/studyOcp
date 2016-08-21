@@ -12,13 +12,11 @@ public class ServicesProof
         ExecutorService threadExecutor=Executors.newCachedThreadPool();
         threadExecutor.execute(tk1);
         threadExecutor.execute(tk2);
-
+        //Ordery shutdown, do not accept new task!!!
         threadExecutor.shutdown();
         System.out.println("finalizado everything");
-
+   
     }
-
-
 
 }
 class Task implements Runnable

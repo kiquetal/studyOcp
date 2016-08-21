@@ -1,0 +1,8 @@
+Anotaciones TEST
+
+=Repasar los inner Class
+annonymous class can never be static.
+
+
+= Ojo cuando el resolive tiene "\\" se agregá el primer  dash, sino tiene es
+porque es relativo y el resultado es el resultado de append el argumento al this.
