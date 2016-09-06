@@ -15,10 +15,12 @@ public class NoCompile
 //  ls.add(4);
 
 //List l=new ArrayList(); //warning here.
-List  l=new ArrayList(); 
-//List<Integer> l2 = new ArrayList();// warning here
-//List l2=l;
-
+List  l=new ArrayList<Integer>();
+List lm=new ArrayList<Double>();
+  
+List<Integer> l3 = new ArrayList<>();// warning here
+//l3=l;
+l3=ls;
 //l.add("5"); //warning here!!!
 
 //List<?> mn=dame(String.class);

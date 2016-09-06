@@ -1,15 +1,16 @@
 class C{
-
- void m(){
-
- System.out.println("clase mayor");
- }
+    void m()
+    {
+        System.out.println("clase mayor");
+    }
 }
 public class Probando
 {
 
-    class C{
-        void m(){
+    class C
+    {
+        void m()
+        {
             System.out.println("soy member");
         }
     }
@@ -27,12 +28,8 @@ public class Probando
         {
             void m()
             {
-                System.out.println("lol");
+                System.out.println("soy local class");
             }
         }
     }
-
-
-
-
 }
