@@ -1,0 +1,117 @@
+Anotaciones with WatchService
+StandardWatchEcentKinds
+  -ENTRY_CREATE A directory entry is created.
+  -ENTRY_DELETE A directory entry is deleted.
+  -ENTRY_MODIFY A directory entry is modified.
+  -OVERFLOW Events might have been lost of discarded. (Thre is no need
+  to register this event.)
+
+FileSystem.getDefault().newWatchSevice();
+Files.newDirectoryStream();
+
+POOL returns immediately with a null, if unvailable.
+take returns a queued key, if no queued key is available, this method waits.
+
+TWO STATES
+
+-Ready indicates that the key is ready to accept events. When first created
+a key is in the ready state.
+
+-Signaled indicates that one or more eventes are queued. Once the key
+has been signaled, it is no longer in the ready state until the reset
+method is invoked.
+
+-Invalid indicates that the key is no longer active. This state happening
+when one of the following occurs:
+The process explicitly cancels the key using the cancel method.
+The directory becomes inaccesible.
+The watch service is closed.
+
+package java.io.Console;
+
+flush()
+format(String fmt, Objects ... args)
+printf(String format, Objects ..args)
+reader()
+readLine(String fmt, Objects ...args)
+readPassword(String fmt,Objects ..args)
+writer()
+
+
+[[StandardOpenOption]]
+
+-[APPEND]
+
+
+-[CREATE]
+Create a new file, if file it doesn't exists.
+
+-[CREATE_NEW]
+
+Create a new file, failing if the file aready exists.
+
+-[DELETE_ON_CLOSE]
+
+-[DSYNC]
+
+Require that every update to the file's content be written
+synchronouly to the underlying storage device.
+
+-[SPARSE]
+
+-[SYNC]
+Require that every update to the file or metadata be written synchronosly
+to the underlying storage device.
+
+-[TRUNCATE_EXISTING]
+If the file aready exists and its opened for WRITE access, then its
+length is truncated to 0.
+
+-[WRITE]
+Open for write access.
+
+-[READ]
+Open for read access.
+
+[[ILLEGAL]]
+  APPEND CREATE_NEW
+  READ AND DELETE_ON_CLOSE
+
+Order executing print(s, s=gone)
+will print "going,gone");
+
+
+FLAGS for String
+
+[-] Left justify this argument, Must specify width as well
+
+[+] Include sign, only if the argument d or f.
+
+[0] Applicable only if the argument is number.
+
+[.] Use locale-specific grouping separators applicable only for numbers/
+
+[(] Enclose negative number in parentheses
+
+MIN_PRIORITY=1
+NORM_PRIORITY=5
+MAX_PRIORITY=15
+
+Thread gets the same priority as the thread that has created it.
+READ CAREFULLY
+
+The + operator is overloaded only for String and not StringBuilder
+
+
+normalize
+
+Returns a path that is this path with redudant name elements eliminated.
+
+The precise definition of this method is implementation dependen but in general derives from this path, a path that does not containt redundand name
+elements.
+
+The resulting path or this path if it does not contain redundant name elements, an empty path is returned if this path does have a root component
+and all the name are redundants.
+
+Anonymous class can never be static. Even if createad in static method.
+

@@ -1,0 +1,19 @@
+Learning Path: Mastering JAVA.
+
+A DAO is an object that provides an abstract interface to some type
+of databse or persistence mechanism, providing some specific operations
+without exposing details of the database.It provides a mapping from
+applications calls to the persistance layer.
+
+A FactoryMethod pattern is a way to encapsulate object creation.
+The constructors are marked private, so they cannot be called except
+from inside the class, and the FactoryMethod is marked as static, so that
+it can be called without first having object.
+
+Examples:
+
+-DriverManager.getConnection()
+-Connection.createStatement()
+-Statement.executeQuery();
+
+

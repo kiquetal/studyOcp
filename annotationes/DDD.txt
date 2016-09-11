@@ -1,0 +1,191 @@
+Layered Architecture
+
+3-tier Architecture
+
+       Presentation
+
+
+       Business
+
+
+       Data Access
+
+
+====Key Points======
+
+Layers and Tiers
+
+Domain Layer
+
+Other Layers
+
+Spaghetti vs Lasagna
+
+Messy tangle of instructions
+Layers block of modules easy to deploy.
+
+Segmentation of Code
+
+Layer logical contianer
+Tier physical space.
+
+DDD
+
+Presentation Layer
+
+Business Layer {Application Layer
+ {Domain Layer
+       Model - Services
+
+
+Infraestructure Layer
+Ioc
+
+
+=============================
+UX
+Uses Cases
+Businesss
+-TX Script
+-Table module.
+-Domain Model.
+-CQRS
+-Event Sourcing
+Persistance
+-Memory
+-NoSql
+-Relational
+==========================
+
+Presentation layer
+
+Can be seen as a collection of screen,
+Generally speaking as ViewModel
+and InputModel.
+
+Responsible for providing the user
+interface to accomplish any required tasks.
+
+Responsible for providing an effective,
+smooth and pleasent user experience.
+
+Task-based.
+Device-friendly
+User-friendly
+Faithful to real world processes
+
+
+Application Layer.
+Reports to the presentation
+Serve ready-to-use data in required form
+Double linked the presentation
+Orchestrates tasks triggered by presentation
+
+
+The bussiness Layer
+
+Application Logic and Domain Logic
+
+Are of entity to hold the data and
+the workflow.
+
+Data Transfer objects.
+Application services.
+
+Domain models.
+Domain services.[behaviour and other not fitting]
+
+
+Uses cases about baking business
+rules into the code.
+Statement that detail implementation of
+a business procesd or describe
+a business policy to be taken in
+account.
+
+Common Patterns
+
+Tx Script
+
+Sequence of actions, handle
+single task.
+
+Table Modules
+More database centric-way
+close to related to persistance and
+relatabase.
+
+Domain Module
+
+Expected behaviour, object model.
+Classes represented entities, expose
+properties and method.
+Aggregated objects
+
+Persistence agnostic
+
+Module and services
+Domain Layer
+Logic invariante to use-cases
+Domain model
+Domain services
+
+Models for the business domain
+Object oriented entity model
+
+DDD Conventions
+factories, value types, private sette
+Data and behavior
+Anemic Model
+Plain data containers
+Behavior and rules moved to domain
+services.
+
+==Domain Services==
+Pieces of domain logic that
+don't fit into any of the existing
+entities.
+
+
+==Infrastructure====
+Set of the fundamental facilities
+ needed for the operation of a software
+ system.
+
+
+==The domain Model Supporting Architecture
+
+Classic Approach-Implementing the Domain Layer.
+
+Key Points
+Object-oriented Model for Domain
+Domain Services
+
+Holistic Model for the Business Domain
+
+Domain Model
+-Aggregates
+-Entities
+-Value Types
+-Factories
+
+Domain Services
+-Cross-aggregate behavior
+-Repositories
+-External Services.
+
+-Domain Layer
+
+Domain Model.
+ Integrated by modules.
+ Entities and values
+
+Aggregates are grouped of entities
+and valueObject
+
+
+Domain Services
+ Repositories
+ Proxies
+ 
+ 
