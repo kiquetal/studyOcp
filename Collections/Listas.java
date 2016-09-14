@@ -7,12 +7,10 @@ public class Listas
     {
 
         System.out.println("Get all listas");
-        System.out.println(PI);
-        
-
-
+	    System.out.println(PI);
+    
     }
-
+    	
 
 
 }

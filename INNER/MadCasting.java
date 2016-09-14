@@ -1,13 +1,15 @@
 interface I
 {
 }
+interface L {
+}
 class A implements I
 {
 }
 class B extends A
 {
 }
-class C extends B
+class C extends A
 {
 }
 public class MadCasting
@@ -16,7 +18,11 @@ public class MadCasting
     {
        A a=new A();
        B b=new B();
-       b=(B)a;
+       A a1=b;
+       C c=new C();
+	System.out.println(a1.getClass());
 
+//Interface without relation could compile without problem.
+      B b1=(B)a1;
     }
 }
