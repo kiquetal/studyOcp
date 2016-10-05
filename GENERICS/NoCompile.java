@@ -17,10 +17,11 @@ public class NoCompile
 //List l=new ArrayList(); //warning here.
 List  l=new ArrayList<Integer>();
 List lm=new ArrayList<Double>();
-  
+
+//l.add("kiquetal");  
 List<Integer> l3 = new ArrayList<>();// warning here
 //l3=l;
-l3=ls;
+//l3=ls;
 //l.add("5"); //warning here!!!
 
 //List<?> mn=dame(String.class);
