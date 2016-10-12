@@ -29,7 +29,7 @@ can't be changed
     
 #### Methods
 
-    int abstract read() read Byte
+    int abstract read() read Byte IOException
     int read(byte[]) count of bytes read
     int read(byte[],int offset,int len)
     close()
@@ -69,3 +69,30 @@ can't be changed
     FileOutputStream(File,boolean) throws FileNotFoundException
     FileOuputStream(String)
     FileOutputStream(String,boolean) 
+
+###### DataInputStream and DataOutputStream
+
+    DataInputStream(InputStream in)
+    DataOutputStream(OutputStream out)
+    Let you read and write primitives types and string
+    Any read opeartion past the end will flow
+    EOFException
+    
+###### ObjectInputStream and ObjectOutputStream
+
+####### Methods
+
+    readObject could throw ClassNotFoundException
+    OptionDataException where primitive was read.
+    
+    Ojo static and transient no son persistidos
+    al file,pero son cargados con los valores de la clase
+    
+    Lo mismo sucede con variables de una clase sin implementar
+    Serializable no son almacenados solo obtienen
+    el valor por defecto luego de la deserializacion
+    
+    
+ 
+ 
+    
