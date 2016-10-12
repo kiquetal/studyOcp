@@ -22,7 +22,11 @@
     
     Path are inmutables.
     
-    
+### Comments
+
+    ATOMIC_MOVE
+    COPY_ATTRIBUTES
+    REPLACE_EXISTING
 Resolving path using method resolve and resolveSibling
 
 
@@ -141,3 +145,47 @@ root component. IllegalArgumentException
     write
 ## Recursively access a directory tree
 
+### Methods
+
+#### FileVisitResult postVisitDirectory(T dir, IOExceptionex)
+    
+    Invoked for a directory after entries in the directory,
+    and all of their descendants,have been visited
+    
+#### FileVisitResult preVisitDirectory(T dir,BasicFileAttributes attrs)
+
+    Invoked for a directory before entries  in the directory are 
+    visited
+    
+#### FileVisitResult visitFile(T file,BasicFileAttributes )
+
+    Invoked for a file in a directory
+    
+#### FileVistResult visitFileFailed(T file,IOExcpetion ex)
+
+    Invoked for a file that could not be visited.
+    
+##### ENUMS
+
+    CONTINUE
+    SKIP_SIBLING
+    SKIP_SUBTREE
+    TERMINATE
+    
+## Find a file with the PathMatcher Interface
+
+public abstract PathMatcher getPathMatcher(syntaxAndPattern)
+
+
+## Watch directory for changes by using the WathService Interface
+
+ FileSystesm.getDefault().newWatchService)IOException
+ ()
+### CONSTANTS
+
+    ENTRY_DELETE
+    ENTRY_CREATE
+    ENTRY_MODIFY
+    OVERFLOW
+    
+    
