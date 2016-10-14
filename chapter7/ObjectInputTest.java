@@ -22,7 +22,7 @@ public class ObjectInputTest
             }
     }
 }
-class Parent
+class Parent implements Serializable
 {
     String parent="value";
 }
